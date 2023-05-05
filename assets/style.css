@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* CONFIGURAÇÃO ESTRUTURA HTML */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+/* HEADER */
+
+header {
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    align-items: start;
+}
+
+ header span {
+    color: #00f7ff;
+
+ }
+
+ header .nav-primaria{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-top: 15px;
+   }
+
+ header .nav-primaria li a {
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+    font-family: 'Rajdhani'; 
+ }
+
+ header .nav-primaria li a::after {
+   content: '';
+   width: 0px;
+   height: 0px;
+   border-bottom: 4px solid transparent;
+   display: block;
+   transition: .9s ;
+
+}
+
+header .nav-primaria li a:hover::after{
+   width: 100%;
+   height: 0px;
+   padding: 0px;
+   border-bottom: 4px solid #00f7ff ;
+}
+
+
+
+
+ /* ACESSO LINKEDIN */
+
+ .section-div {
+    animation: inicializar 0.7s forwards;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    border-top: 1px solid #fff;
+
+ }
+
+ .section-div div{
+    margin-top: 120px;
+    align-items: start;
+    display: grid;
+    gap: 20px;
+
+ }
+
+ .section-div h1 {
+    font-family: 'Rajdhani';
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+ }
+
+ .section-div h2 {
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    color: #f7f7f7;
+
+ }
+
+ .section-div p {
+    font-family: 'Rajdhani';
+    font-size: 1.2rem;
+    color: #f7f7f7;
+
+ }
+
+ .section-div img {
+    max-width: 100%;
+
+ }
+
+ .section-div div a {
+    justify-self: self-start;
+    color: #fff;
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    font-family: 'Rajdhani';
+    box-shadow: 0 0 3px #000;
+    transition: all 0.5s ease;
+ }
+
+ .section-div div a:hover {
+   box-shadow: 4px 6px 16px #ff0040;
+ } 
+
+ .digitando::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .6s infinite;
+ }
+
+ @keyframes pisca {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+ }
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+ }
+
+
+ /*SEÇÃO SOBRE MIM */
+
+ main{
+    background-color: #1F2532;
+    border-radius: 1rem 1rem 0 0;
+   }
+
+ main .sobre {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+
+ }
+
+ .sobre_titulo {
+    margin: 5px 0;
+    grid-column: 1/ -1;
+    text-align: center;
+    color: #fff;
+
+ }
+
+ .sobre_titulo h1 {
+    font-size: 3rem;
+    color: #00f7ff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani';
+
+ }
+
+ .sobre_titulo p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani';
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+ }
+.card{
+   background: #fff;
+   box-shadow: 0 0 8px #000000;
+   border-radius: 8px;
+   padding: 10px;
+   transition: all 0.5s ease;
+}
+
+.card:hover {
+   box-shadow: 4px 6px 12px #00ccff;
+}
+ 
+.card img {
+   max-width: 100%;
+   border-radius: 5px;
+   padding: 10px;
+   transition: all 0.5s ease;
+   filter: grayscale(1);
+}
+
+.card:hover img {
+   filter: grayscale(0);
+}
+
+.sobre_conteudo{
+    animation: sobeSecao .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    color: #fff;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .sobre_texto {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .sobre_texto h1 {
+    font-size: 2.3rem;
+    font-family: 'Rajdhani';
+    color: #fff;
+    grid-column: 1/-1;
+ }
+
+ .sobre_texto h1::after {
+    background-color: #00f7ff;
+    height: 3px;
+    width: 60px;
+    margin: 5px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+ }
+
+ .sobre_texto p {
+    font-size: 1.0rem;
+    font-family: 'Rajdhani';
+    grid-row: 2;
+    grid-column: 1/-1;
+
+ }
+
+ @keyframes sobeSecao {
+    from{
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+ }
+
+ @keyframes ladoSecao {
+    from{
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+ }
+
+ /*MINHAS EXPERIÊNCIAS*/
+
+ .experiencas {
+   background-color: #1F2532;
+   padding: 60px;
+ }
+
+.minhas_experiencas {
+   padding: 60px;
+   color: black;
+   font-family: 'Rajdhani';
+ }
+
+ .minhas_experiencas ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .minhas_experiencas ul li {
+   border-radius: 6px;
+   position: relative;
+   padding: 10px;
+   display: grid;
+   gap: 30px;
+   text-align: center;
+   max-width: 300px;
+   height: 350px;
+   align-content: center;
+   background-color: #000000;
+ }
+
+ .minhas_experiencas ul li i {
+   font-size: 4rem;
+   color: #ffffff;
+   padding-top: 0.5rem;
+ }
+
+ .minhas_experiencas ul li h3 {
+   color: rgb(255, 255, 255);
+   font-size: 1.8rem;
+   font-weight: 500;
+ }
+
+ .minhas_experiencas ul li p {
+   color: #ffffff;
+   font-size: 1rem;
+ }
+
+ .minhas_experiencas li::before {
+   content: '';
+   transition: .5s ease-in-out;
+   border-radius: 6px;
+   width: 100px;
+   height: 0px;
+   position: absolute;
+   top: -2px;
+   right: -2px;
+   border: 2px solid transparent;
+   border-right: 2px solid transparent;
+ }
+
+ .minhas_experiencas li::after {
+   content: '';
+   transition: .5s ease-in-out;
+   border-radius: 6px;
+   width: 100px;
+   height: 0px;
+   position: absolute;
+   bottom: -2px;
+   left: -2px;
+   border-bottom: 2px solid transparent;
+   border-left: 2px solid transparent;
+ }
+
+ .minhas_experiencas li:hover::before {
+   width: 100%;
+   height: 100%;
+   border-top: 2px solid #00f7ff;
+   border-right: 2px solid #00f7ff;  
+ }
+
+ .minhas_experiencas li:hover::after {
+   width: 100%;
+   height: 100%;
+   border-bottom: 2px solid #00f7ff;
+   border-left: 2px solid #00f7ff;  
+
+}
+
+/* MEUS PROJETOS */
+
+.projetos {
+   padding: 30px;
+   justify-content: center;
+   gap: 30px;
+   display: grid;
+   background-color: #1F2532;
+}
+
+.projetos ul {
+   display: flex;
+   justify-content: center;
+   gap: 30px
+   ;
+}
+
+.projetos_filtro ul li {
+   font-family: "Rajdhani";
+   font-size: 1.2rem;
+   color: #FAFAFA;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 2px solid #FAFAFA;
+   background: #1F2532;
+   box-shadow: 3px 3px #fafafa;
+   cursor: pointer;
+}
+
+.projetos_filtro ul li:active {
+   box-shadow: none;
+   transform: translate(3px, 3px);
+}
+
+.projetos_cases{
+   padding-bottom: 100px;
+}
+
+.projetos_cases ul{
+   display: grid;
+   margin-top: 30px;
+   gap: 30px;
+   justify-content: center;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.projetos_cases ul li {
+   max-width: 100%;
+   height: 100%;
+   font-size: 1.2rem;
+   text-align: center;
+   color: #ffffff;
+   font-family: "Rajdhani";
+   padding-top: 20px;
+   font-weight: bold;
+}
+
+
+.projetos_cases ul li img {
+   max-width: 100%;
+   height: 100%;
+   border-radius: 4px;
+   cursor:pointer;
+   box-shadow: 15px 15px 30px rgb(25, 25, 25),
+               -15px -15px 30px rgb(60, 60, 60);
+}
+
+
+/* CONTATO */
+
+.contato {
+  padding: 30px;
+  background: #1F2532;
+}
+.form {
+   background: #000000;
+   display: grid;
+   align-items: center;
+   padding: 20px ;
+   width: 100%;
+   flex-direction: column;
+   font-family: 'Rajdhani';
+   border-radius: 15px;
+}
+
+.form label {
+   color: #fff;
+   font-size: 1.2rem;
+
+}
+.form input {
+   padding: 15px;
+   outline: none;
+   border: 0;
+   margin-bottom: 20px;
+   font-size: 1rem;
+   transition: all 0.5s;
+}
+
+.form input:focus {
+   border-radius: 16px;
+}
+
+.form textarea {
+   padding: 10px;
+   outline: none;
+   border: 0;
+   font-size: 1.2rem;
+   margin-bottom: 30px;
+   transition: all 0.5s;
+   font-family: 'Rajdhani';
+}
+
+.form textarea:focus {
+   border-radius: 16px;
+}
+
+.form button {
+   padding: 15px;
+   cursor: pointer;
+   font-size: 1.2rem;
+   background: transparent;
+   border: 2px solid #00f7ff;
+   font-family: 'Rajdhani';
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #ffffff;
+   transition: all 0.5s;
+   margin-bottom: 20px;
+ 
+}
+
+
+.form button:hover {
+   background: #fff;
+   color: #000;
+   border-radius: 16px;
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+   background-color: #000;
+   padding: 120px;
+   margin-top: 10px;
+}
+
+
+footer .footer_comercial {
+   text-align: center;
+   color: #fff;
+   margin: 20px auto;
+   font-size: 1.2rem;
+   font-family: "Rajdhani";
+}
+
+
+ /* RESPONSIVO */
+
+ @media(max-width: 992px){
+   .section-div img {
+      display: none;
+   }
+   .section-div {
+      background-image: url(img/Cyberpunk\ Avatar.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   header {
+      justify-content: space-between;
+      padding: 20px 75px;
+   }
+
+   header .nav-primaria {
+      display: none;
+   }
+
+   header i {
+      color: #00f7ff;
+      font-size: 3rem;
+   }
+
+   header .nav-primaria.ativado {
+      background: linear-gradient(rgba(43,42,42, 0.176), rgba(46,46,46, 0.724));
+      backdrop-filter: blur(4px);
+      border: 1px solid #777;
+      -webkit-backdrop-filter: blur(4px);
+      position: absolute;
+      display: grid;
+      top: 100px;
+      color: white;
+      font-family: 'Rajdhani';
+      text-align: center;
+      z-index: 5;
+      padding: 25px;
+      font-size: 1.6rem;
+      border-radius: 0 0 4px;
+      right: 20px;
+      animation: sobeSecao .8s ease-in-out forwards;
+   }
+
+
+   .card {
+      grid-column: 1/-1;
+      justify-self: center;
+      max-width: 80%;
+   }
+
+   .sobre_conteudo {
+      grid-column: 1/-1;
+      justify-self: center;
+      max-width: 80%;
+   }
+
+
+
+
+ }
+
+
+ /*SCROLL REVEAL*/
+
+ .section-div, .sobre_rev, .experiencas, .minhas_experiencas, .logo_alex, .projetos, .contato {
+   visibility: hidden;
+ }
+
+
+
+
+ /* PAGINA OBRIGADO */
+
+ .obrigado {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #000000;
+   flex-direction: column;
+   font-family: "Rajdhani";
+ }
+
+ .obrigado img{
+   display: flex;
+   align-items: center;
+   width: 300px;
+   height: 300px;
+   
+   
+ }
+
+
+
+ .texto {
+   color: #fff;
+   font-size: 45px;
+   margin: 20px 0;
+}
+
+ .paragrafo {
+   color: #fff;
+   padding-bottom: 50px;
+ }
+
+ .obrigado button {
+   padding: 0.1em 0.25em;
+   width: 13em;
+   height: 4.2em;
+   background-color: #212121;
+   border: 0.08em solid #fff;
+   border-radius: 0.3em;
+   font-size: 12px;
+   
+ }
+
+ .obrigado a {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 0.4em;
+   width: 8.25em;
+   height: 2.5em;
+   background-color: #212121;
+   border-radius: 0.2em;
+   font-size: 1.5em;
+   color: #fff;
+   border: 0.08em solid #fff;
+   box-shadow: 0 0.4em 0.1em 0.019em #fff;
+   
+ }
+ 
+ .obrigado a:hover {
+   transition: all 0.5s;
+   transform: translate(0, 0.4em);
+   box-shadow: 0 0 0 0 #fff;
+ }
+
+ .obrigado a:not(hover){
+   transition: all 1s;
+ }
