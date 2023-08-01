@@ -13,7 +13,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Otimizar foto de perfil
 
 ## Linguagens:
-  <p>Algumas linguagens que já utilizei em meus projetos</p>
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,figma,js" />
   </a>  <div style="display: inline block"><br/>
