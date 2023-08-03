@@ -3,6 +3,7 @@
 <img src=".github/Portfolio Mockup.jpg" alt="Alex Holanda - Portfolio Pessoal">
 
 > Primeiro portfolio desenvolvido para desenvolver minha pratica, publicar alguns de meus projetos, e divulgar minhas redes sociais.
+<p><a href="https://alexhollsp.github.io/portfolio_Alex/">ACESSE AQUI</p>
 
 ### Ajustes e melhorias
 
